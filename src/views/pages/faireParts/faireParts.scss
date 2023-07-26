@@ -1,0 +1,32 @@
+.main {
+  min-height: 60vh;
+  margin-bottom: 2em;
+}
+
+.accueil {
+  width: 100%;
+}
+
+.fairePartsWrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fairePartsWrapper__link {
+  width: 400px;
+}
+
+.fairePartsWrapper__link__img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0 2px 4px, rgba(0, 0, 0, 0.3) 0 7px 13px -3px,
+  rgba(0, 0, 0, 0.2) 0 -3px 0 inset;
+  transition: All .2s ease-in-out;
+
+  &:hover {
+    transition: All .4s ease-in-out;
+    transform: scale(1.1);
+  }
+}
