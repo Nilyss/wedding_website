@@ -7,7 +7,7 @@ export default function FaireParts() {
       <figure className={"fairePartsWrapper"}>
         <a
           className={"fairePartsWrapper__link"}
-          href={"https://i.imgur.com/gBR8H2N.png"}
+          href={faireParts}
           target={"_blank"}
           title={"Télécharger"}
         >
