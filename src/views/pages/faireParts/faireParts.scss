@@ -1,6 +1,10 @@
+@use '../../../utils/styles/variables' as variables;
+
 .main {
   min-height: 60vh;
-  margin-bottom: 2em;
+  padding: 2.1em 2em 2em 2em;
+  position: relative;
+  overflow: hidden;
 }
 
 .accueil {
@@ -29,4 +33,34 @@
     transition: All .4s ease-in-out;
     transform: scale(1.1);
   }
+}
+
+.FlowerWrapper {
+  @media (max-width: variables.$breakpointMobile) {
+    display: none;
+  }
+  width: 500px;
+  position: absolute;
+  bottom: -6.8em;
+  left: -28em;
+}
+
+.FlowerWrapper__img {
+  width: 100%;
+  transform: rotate(75deg) translateY(-50%);
+}
+
+.FlowerWrapper2 {
+  @media (max-width: variables.$breakpointMobile) {
+    display: none;
+  }
+  width: 500px;
+  position: absolute;
+  top: -8.2em;
+  right: -28em;
+}
+
+.FlowerWrapper__img2 {
+  width: 100%;
+  transform: rotate(250deg) translateY(-50%);
 }

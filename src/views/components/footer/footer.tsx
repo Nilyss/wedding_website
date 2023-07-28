@@ -12,7 +12,7 @@ export default function Footer() {
           alt="logo"
         />
       </figure>
-      <a href={"https://ndecressac.fr"} className={'footer__copyright'}>© DECRESSAC Nicolas 2023</a>
+      <a href={"https://ndecressac.fr"} className={'footer__copyright'}>© 2023 by Nicolas Decressac</a>
     </footer>
   )
 }

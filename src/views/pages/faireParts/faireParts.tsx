@@ -1,5 +1,6 @@
 import "./faireParts.scss";
 import faireParts from "../../../assets/faire-parts_V01.png";
+import flower1 from "../../../assets/flower1.png";
 
 export default function FaireParts() {
   return (
@@ -17,6 +18,12 @@ export default function FaireParts() {
             alt={"faire-parts"}
           />
         </a>
+      </figure>
+      <figure className={"FlowerWrapper"}>
+        <img className={"FlowerWrapper__img"} src={flower1} alt={"Flower"} />
+      </figure>
+      <figure className={"FlowerWrapper2"}>
+        <img className={"FlowerWrapper__img2"} src={flower1} alt={"Flower"} />
       </figure>
     </main>
   );

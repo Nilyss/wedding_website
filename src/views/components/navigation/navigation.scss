@@ -1,6 +1,16 @@
+@use '../../../utils/styles/variables' as variables;
+
 .navigation {
   padding: 2em;
   width: 100%;
+  background: #ffffff;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2em;
+  border-top: .2em solid #f3a9b5;
+  border-bottom: .2em solid #f3a9b5;
 }
 
 .navigation__itemWrapper {
@@ -16,11 +26,30 @@
 }
 
 .navigation__itemWrapper__item__link {
-  font-size: 1.8em;
-  color: #ec8b9d;
-  filter: drop-shadow(2px 4px 0.75rem #f6aab9);
-  &:hover {
-    color: #f6aab9;
-    filter: drop-shadow(2px 4px 0.75rem #f6aab9);
+  @media(max-width: variables.$breakpointMobile) {
+    font-size: 32px;
   }
+  font-size: 42px;
+  color: #f3a9b5;
+  filter: drop-shadow(12px 14px 0.75rem #ff8080);
+  text-decoration: none;
+  transition: All .2s ease-in-out;
+  &:hover {
+    color: #ff8080;
+    filter: drop-shadow(2px 4px 0.75rem #f6aab9);
+    transition: All .3s ease-in-out;
+  }
+}
+
+.separatorWrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.separatorWrapper__img {
+  width: 100%;
+  height: 50px;
+  object-fit: contain;
 }
