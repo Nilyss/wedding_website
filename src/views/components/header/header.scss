@@ -2,8 +2,9 @@
 
 .header {
   @media(max-width: variables.$breakpointMobile) {
-    padding: 1em;
+    padding: 1em 1em 0 1em;
     justify-content: center;
+    flex-flow: nowrap;
   }
   display: flex;
   flex-flow: wrap;
@@ -18,14 +19,15 @@
 }
 
 .header__logoWrapper {
+  width: 50%;
+}
+
+
+.header__logoWrapper__goToHome__img {
   @media(max-width: variables.$breakpointMobile) {
     width: 150px;
   }
   width: 250px;
-}
-
-.header__logoWrapper__goToHome__img {
-  width: 100%;
   object-fit: cover;
   margin-bottom: -2em;
   filter: drop-shadow(7px 7px 2px rgba(0, 0, 0, .3));
@@ -34,19 +36,102 @@
 .header__titleWrapper {
   @media(max-width: variables.$breakpointTablet) {
     font-size: 24px;
+    width: 140px;
+    line-height: unset;
   }
   @media(max-width: variables.$breakpointMobile) {
     font-size: 16px;
-    max-width: 25%;
+    width: 100px;
   }
+  width: 50%;
   text-align: center;
   font-weight: 700;
   font-size: 32px;
   font-style: italic;
-  background: #F08D9F;
-  background: linear-gradient(to right, #F08D9F 0%, #F6C0C7 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;;
+  position: relative;
+  background-image: linear-gradient(
+                  -500deg,
+                  #fa6d6d 0%,
+                  #ff8080 29%,
+                  #F08D9F 67%,
+                  #F6C0C7 100%
+  );
+  background-clip: border-box;
+  background-size: 200% auto;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  animation: titleAnimation 3s ease infinite;
+  line-height: 140px;
+}
+
+@keyframes titleAnimation {
+  0% {
+    background-position: 200% center;
+  }
+  100% {
+    background-position: 0 center
+  }
+}
+
+@keyframes titleEffect {
+  0% {
+    clip: rect(31px, 9999px, 94px, 0)
+  }
+  10% {
+    clip: rect(112px, 9999px, 76px, 0)
+  }
+  20% {
+    clip: rect(85px, 9999px, 77px, 0)
+  }
+  30% {
+    clip: rect(27px, 9999px, 97px, 0)
+  }
+  40% {
+    clip: rect(64px, 9999px, 98px, 0)
+  }
+  50% {
+    clip: rect(61px, 9999px, 85px, 0)
+  }
+  60% {
+    clip: rect(99px, 9999px, 114px, 0)
+  }
+  70% {
+    clip: rect(34px, 9999px, 115px, 0)
+  }
+  80% {
+    clip: rect(98px, 9999px, 129px, 0)
+  }
+  90% {
+    clip: rect(43px, 9999px, 96px, 0)
+  }
+  100% {
+    clip: rect(82px, 9999px, 64px, 0)
+  }
+
+}
+
+.header__titleWrapper::after {
+  @media(max-width: variables.$breakpointTablet) {
+    display: none;
+  }
+  position: absolute;
+  top: 3.3em;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  content: "";
+  height: 3px;
+  width: 50%;
+  background: #f3a9b5;
+  border-radius: 12px;
+}
+
+.header__titleWrapper__blockquote {
+  @media(max-width: variables.$breakpointTablet) {
+    display: none;
+  }
+  margin-top: -2.5em;
 }
 
 .header__flower1Wrapper {

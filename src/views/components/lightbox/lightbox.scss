@@ -1,0 +1,32 @@
+@use "../../../utils/styles/variables" as variables;
+
+main {
+  position: relative;
+}
+
+.Lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lightBox__mediaWrapper {
+  padding: 2em;
+  background: #2b2a33;
+  max-width: 90vw;
+  max-height: 90vh;
+  overflow: auto;
+}
+
+.lightBox__mediaWrapper__img {
+  width: 100%;
+  height: auto;
+}
+

@@ -1,0 +1,20 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.backToTopWrapper__backToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    font-size: 60px !important;
+    color: #f4aeb9;
+    cursor: pointer;
+    opacity: 0;
+    transition: all 200ms ease-in-out;
+    z-index: 9999;
+}
+
+.showBackToTop {
+    opacity: 1;
+    transition: all 200ms ease-in-out;
+}
