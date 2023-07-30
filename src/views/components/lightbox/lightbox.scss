@@ -18,6 +18,12 @@ main {
 }
 
 .lightBox__mediaWrapper {
+  @media (max-width: variables.$breakpointMobile) {
+    padding: unset;
+    max-width: 100vw;
+    max-height: 100vh;
+    background: unset;
+  }
   padding: 2em;
   background: #2b2a33;
   max-width: 90vw;
@@ -26,6 +32,9 @@ main {
 }
 
 .lightBox__mediaWrapper__img {
+  @media (max-width: variables.$breakpointMobile) {
+    border-radius: 8px;
+  }
   width: 100%;
   height: auto;
 }
