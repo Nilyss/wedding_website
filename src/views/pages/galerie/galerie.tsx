@@ -36,7 +36,7 @@ export default function Galerie() {
     setSelectedMedia(media);
   };
 
-  let isActive: boolean = true;
+  let isActive: boolean = false;
 
   return (
     <main className={"main"}>
@@ -45,7 +45,7 @@ export default function Galerie() {
           <h2>Revivez ce jour avec nous !</h2>
           <blockquote>
             Si vous avez des photos ou vidéos en votre possession, merci de les
-            envoyer en cliquant{" "}
+            partager en cliquant{" "}
             <a href={"mailto:decressac.nicolas@gmail.com"}>ici</a> pour les
             envoyer par mail,
           </blockquote>
