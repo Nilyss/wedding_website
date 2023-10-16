@@ -37,9 +37,9 @@ function App() {
           <Header />
           <Navigation />
           <Routes>
-            <Route path={"/"} element={<Navigate to="/accueil" />} />
-            <Route path={"/accueil"} element={<FaireParts />} />
+            <Route path={"/"} element={<Navigate to="/galerie" />} />
             <Route path={"/galerie"} element={<Galerie />} />
+            <Route path={"/fairepart"} element={<FaireParts />} />
             <Route path="*" element={<NotFoundPage />} />
           </Routes>
           <Footer />

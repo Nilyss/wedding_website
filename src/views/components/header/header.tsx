@@ -25,7 +25,7 @@ export default function Header() {
   return (
     <header className={"header"}>
       <figure className={"header__logoWrapper"} data-aos="slide-down">
-        <Link to={"/accueil"} className={"header__logoWrapper__goToHome"}>
+        <Link to={"/galerie"} className={"header__logoWrapper__goToHome"}>
           <img
             className={"header__logoWrapper__goToHome__img"}
             src={brandingLogo}

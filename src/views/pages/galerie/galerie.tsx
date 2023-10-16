@@ -36,7 +36,7 @@ export default function Galerie() {
     setSelectedMedia(media);
   };
 
-  let isActive: boolean = false;
+  let isActive: boolean = true;
 
   return (
     <main className={"main"}>
